@@ -4,8 +4,14 @@
 		<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
 	</head>
 	<body>
+		<!-- This is the master scene it contains all the entities of the enviroment -->
 		<a-scene>
-			
+		  <a-assets>
+		    <img id="boxTexture" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Xiaomi_logo.jpg">
+		  </a-assets>
+		  <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+		  <a-sky color="#222"></a-sky>
+		  <a-plane color="grey" rotation="-90 0 0" width="30" height="30"></a-plane>
 		</a-scene>
 	</body>
 
